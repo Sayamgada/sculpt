@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #ff5722;
+    --primary-dark: #e64a19;
+    --primary-light: #ffccbc;
+    --secondary-color: #212121;
+    --light-color: #f5f5f5;
+    --dark-color: #121212;
+    --text-light: #f5f5f5;
+    --text-dark: #212121;
+    --gray-light: #f0f0f0;
+    --gray-dark: #333333;
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.error-container {
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+.error-code {
+    font-size: 6rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.error-message {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.error-description {
+    font-size: 1rem;
+    color: var(--gray-dark);
+    margin-bottom: 30px;
+}
+
+.btn-home {
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-home:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-3px);
+}
+
+.error-container img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    width: 100%;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+@media (max-width: 992px) {
+    .main-content
+    {
+        padding-top: 15%;
+    }
+}
+@media (max-width: 576px) {
+
+    .main-content
+    {
+        padding-top: 25%;
+    }
+    .error-code {
+        font-size: 4rem;
+    }
+
+    .error-message {
+        font-size: 1.2rem;
+    }
+
+    .error-description {
+        font-size: 0.9rem;
+    }
+}
+

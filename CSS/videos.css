@@ -1,0 +1,108 @@
+
+
+
+.video-grid {
+    margin-top: 30px;
+  }
+  
+  .video-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  
+  .video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-thumbnail {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .video-thumbnail img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .video-card:hover .video-thumbnail img {
+    transform: scale(1.05);
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    opacity: 0.8;
+    transition: var(--transition);
+  }
+  
+  .video-card:hover .play-button {
+    opacity: 1;
+    color: var(--primary-color);
+  }
+  
+  .video-info {
+    padding: 15px;
+  }
+  
+  .video-info h5 {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--text-color);
+  }
+  
+  .video-channel {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    margin-bottom: 0;
+  }
+  
+  /* Modal Styles */
+  .modal-content {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+  }
+  
+  .modal-header {
+    border-bottom-color: var(--card-border);
+  }
+  
+  .modal-header .btn-close {
+    color: var(--text-color);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+    .video-thumbnail img {
+      height: 160px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .video-thumbnail img {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .video-thumbnail img {
+      height: 180px;
+    }
+  
+    .video-info h5 {
+      font-size: 1rem;
+    }
+  }
+  
+  

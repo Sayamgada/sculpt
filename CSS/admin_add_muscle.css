@@ -1,0 +1,109 @@
+/* Dashboard Cards */
+.dashboard-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: var(--transition);
+    border: 1px solid var(--card-border);
+}
+
+.dashboard-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+.form-label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--text-color);
+}
+
+.form-control {
+    background-color: var(--bg-color);
+    border: 1px solid var(--card-border);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.form-control:focus {
+    background-color: var(--bg-color);
+    border-color: var(--primary-color);
+    color: var(--text-color);
+    box-shadow: 0 0 0 0.25rem rgba(255, 87, 34, 0.25);
+}
+
+.form-text {
+    color: var(--text-color);
+    opacity: 0.7;
+}
+
+/* Image Preview */
+.image-preview {
+    width: 100%;
+    height: 200px;
+    border: 2px dashed var(--card-border);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.image-preview:hover {
+    border-color: var(--primary-color);
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.image-preview-placeholder {
+    color: var(--text-color);
+    opacity: 0.5;
+    text-align: center;
+}
+
+.image-preview-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.main-content
+{
+    margin-top: 2rem !important;
+}
+
+@media (max-width: 520px)
+{
+    .main-content
+    {
+        margin-top: 5rem !important;
+    }
+}
